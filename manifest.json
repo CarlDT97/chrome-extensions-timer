@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Timer Extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": "script/popup.html"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "js": ["script/timer.js"],
+        "matches": [
+          "https://developer.chrome.com/docs/extensions/*",
+          "https://developer.chrome.com/docs/webstore/*"
+        ]
+      }
+    ]
+  }
+  
